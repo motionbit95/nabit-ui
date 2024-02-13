@@ -1,8 +1,8 @@
 {
-  "name": "@nabit-ui/component",
-  "version": "0.0.1",
-  "module": "dist/Test.jsx",
-  "main": "dist/Test.jsx",
+  "name": "nabit-ui-test",
+  "version": "0.0.7",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -17,12 +17,15 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files"
+    "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:storybook/recommended"
     ]
   },
   "browserslist": {
@@ -39,7 +42,20 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.23.9",
-    "@babel/preset-react": "^7.23.3"
+    "@babel/preset-react": "^7.23.3",
+    "@storybook/addon-essentials": "^7.6.14",
+    "@storybook/addon-interactions": "^7.6.14",
+    "@storybook/addon-links": "^7.6.14",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.14",
+    "@storybook/preset-create-react-app": "^7.6.14",
+    "@storybook/react": "^7.6.14",
+    "@storybook/react-webpack5": "^7.6.14",
+    "@storybook/test": "^7.6.14",
+    "eslint-plugin-storybook": "^0.6.15",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.6.14",
+    "webpack": "^5.90.1"
   },
   "babel": {
     "presets": [
