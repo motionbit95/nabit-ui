@@ -24,7 +24,7 @@ export const Facebook = {
   args: {
     icon: "https://img.icons8.com/color/48/000000/facebook-new.png",
   },
-};✨✨
+};
 
 export const Apple = {
   args: {
