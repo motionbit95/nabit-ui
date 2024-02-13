@@ -28,3 +28,27 @@
   font-size: 16px;
   padding: 12px 24px;
 }
+
+.circle--small {
+  border-radius: 100%;
+  height: auto;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+}
+
+.circle--medium {
+  border-radius: 100%;
+  height: auto;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+}
+
+.circle--large {
+  border-radius: 100%;
+  height: auto;
+  width: 64px;
+  height: 64px;
+  padding: 12px;
+}

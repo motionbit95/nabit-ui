@@ -35,18 +35,33 @@
 .input-wrapper .inner .icon {
   position: absolute;
   margin-right: 16px;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   cursor: pointer;
 }
 
-.input-label {
+.input-label--small {
   display: flex;
   flex-direction: row;
   margin-bottom: 5px;
+  font-size: small;
 }
 
-.input-label .required {
+.input-label--medium {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  font-size: medium;
+}
+
+.input-label--large {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  font-size: large;
+}
+
+.input-label--required {
   color: var(--error-color);
   margin-left: 5px;
 }

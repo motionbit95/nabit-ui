@@ -6,7 +6,6 @@ import "./reset.css";
 
 export const Input = ({ type, label, size, onChange, ...props }) => {
   const [isPassword, setIsPassword] = useState(type === "password");
-  const [value, setValue] = useState("");
   const [err, setErr] = useState({
     code: null,
     message: null,
@@ -34,7 +33,7 @@ export const Input = ({ type, label, size, onChange, ...props }) => {
           code: "invalid-password",
           message: "Please enter between 8 and 20 characters.",
         });
-      } else if (pw.search(/\s/) != -1) {
+      } else if (pw.search(/\s/) !== -1) {
         setErr({
           code: "invalid-password",
           message: "Please enter your password without spaces.",
@@ -60,7 +59,6 @@ export const Input = ({ type, label, size, onChange, ...props }) => {
   }
 
   function onChangeHandler(e) {
-    setValue(e.target.value);
     if (checkVariable(e.target.value)) {
       onChange(e.target.value);
     }
@@ -69,9 +67,9 @@ export const Input = ({ type, label, size, onChange, ...props }) => {
   return (
     <div className="input-container">
       <div className="input-form">
-        <div className="input-label">
+        <div className={`input-label--${size}`}>
           <label>{label}</label>
-          {props.isRequired && <div className="required">*</div>}
+          {props.isRequired && <div className="input-label--required">*</div>}
         </div>
         <div className="input-wrapper">
           <div className="inner">

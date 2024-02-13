@@ -1,9 +1,9 @@
-import { Button } from "./Button";
+import { IconButton } from "./IconButton";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
-  title: "Example/Button",
-  component: Button,
+  title: "Example/IconButton",
+  component: IconButton,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: "centered",
@@ -11,35 +11,23 @@ export default {
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
+export const Google = {
   args: {
-    primary: true,
-    label: "Button",
+    icon: "https://img.icons8.com/color/48/000000/google-logo.png",
   },
 };
 
-export const Secondary = {
+export const Facebook = {
   args: {
-    label: "Button",
+    icon: "https://img.icons8.com/color/48/000000/facebook-new.png",
   },
-};
+};✨✨
 
-export const Large = {
+export const Apple = {
   args: {
-    size: "large",
-    label: "Button",
-  },
-};
-
-export const Small = {
-  args: {
-    size: "small",
-    label: "Button",
+    icon: "https://cdn3.iconfinder.com/data/icons/picons-social/57/16-apple-512.png",
   },
 };
