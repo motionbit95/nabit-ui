@@ -1,6 +1,6 @@
 .storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: "Poppins";
+  font-weight: 400;
   border: 0;
   border-radius: 3em;
   cursor: pointer;
@@ -9,11 +9,11 @@
 }
 .storybook-button--primary {
   color: white;
-  background-color: #1ea7fd;
+  background-color: var(--primary-color);
 }
 .storybook-button--secondary {
   color: #333;
-  background-color: transparent;
+  background-color: var(--grayscale-color);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
 .storybook-button--small {
@@ -28,3 +28,5 @@
   font-size: 16px;
   padding: 12px 24px;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");

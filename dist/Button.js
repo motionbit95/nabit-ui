@@ -2,11 +2,12 @@ function _extends() { _extends = Object.assign ? Object.assign.bind() : function
 import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
+import './styleguide.css';
 
 /**
  * Primary UI component for user interaction
  */
-const Button = ({
+export const Button = ({
   primary,
   backgroundColor,
   size,
@@ -22,7 +23,6 @@ const Button = ({
     }
   }, props), label);
 };
-export default Button;
 Button.propTypes = {
   /**
    * Is this the principal call to action on the page?

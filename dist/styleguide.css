@@ -1,0 +1,6 @@
+:root {
+    /* 전역 변수 선언 */
+    --primary-color: #6633FF;
+    --secondary-color: #d9d9d9;
+    --font-family: 'Poppins', sans-serif;
+  }

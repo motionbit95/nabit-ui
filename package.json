@@ -1,6 +1,6 @@
 {
   "name": "nabit-ui-test",
-  "version": "0.0.7",
+  "version": "0.0.12",
   "module": "dist/index.js",
   "main": "dist/index.js",
   "dependencies": {
@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files",
+    "publish:npm": "rm -rf dist && mkdir dist && babel src/stories -d dist --copy-files",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
