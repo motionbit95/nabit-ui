@@ -19,13 +19,11 @@ export const Google = {
     icon: "https://img.icons8.com/color/48/000000/google-logo.png",
   },
 };
-
 export const Facebook = {
   args: {
     icon: "https://img.icons8.com/color/48/000000/facebook-new.png",
   },
 };
-
 export const Apple = {
   args: {
     icon: "https://cdn3.iconfinder.com/data/icons/picons-social/57/16-apple-512.png",

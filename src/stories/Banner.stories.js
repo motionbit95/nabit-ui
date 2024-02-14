@@ -1,8 +1,8 @@
-import { Header } from "./Header";
+import { Banner } from "./Banner";
 
 export default {
-  title: "Component/Header",
-  component: Header,
+  title: "Component/Banner",
+  component: Banner,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
   parameters: {
@@ -11,12 +11,11 @@ export default {
   },
 };
 
-export const LoggedIn = {
+export const Default = {
   args: {
-    user: {
-      name: "Jane Doe",
-    },
+    title: "Hooray, twe just released a new version.",
+    description:
+      "Exciting times ahead, as the new version integrates the most recent updates from Nabit UI.",
+    align: "left",
   },
 };
-
-export const LoggedOut = {};

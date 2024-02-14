@@ -1,0 +1,82 @@
+.switch-container {
+  position: relative;
+  margin-left: 10px;
+  /* width: 44px;
+  height: 24px;
+  border-radius: 20px; */
+  cursor: pointer;
+}
+
+.switch-container--small {
+  width: 32px;
+  height: 18px;
+  border-radius: 20px;
+}
+
+.switch-container--medium {
+  width: 48px;
+  height: 24px;
+  border-radius: 20px;
+}
+
+.switch-container--large {
+  width: 64px;
+  height: 36px;
+  border-radius: 20px;
+}
+
+.switch-container--active {
+  background-color: var(--primary-color);
+}
+
+.switch-container--before {
+  background-color: var(--grayscale-color);
+}
+
+.switch-indicator {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  /* width: 16px;
+  height: 16px; */
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); /* 그림자 효과 */
+  border: 2px solid;
+}
+
+.switch-indicator--active--small {
+  border-color: var(--primary-color);
+  transform: translateX(16px);
+}
+
+.switch-indicator--active--medium {
+  border-color: var(--primary-color);
+  transform: translateX(24px);
+}
+
+.switch-indicator--active--large {
+  border-color: var(--primary-color);
+  transform: translateX(28px);
+}
+
+.switch-indicator--before {
+  border-color: var(--grayscale-color);
+  transform: translateX(0);
+}
+
+.switch-indicator--small {
+  width: 10px;
+  height: 10px;
+}
+
+.switch-indicator--medium {
+  width: 16px;
+  height: 16px;
+}
+
+.switch-indicator--large {
+  width: 28px;
+  height: 28px;
+}

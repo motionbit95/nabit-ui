@@ -1,8 +1,7 @@
-import { Header } from "./Header";
-
+import { Input } from "./Input";
 export default {
-  title: "Component/Header",
-  component: Header,
+  title: "Component/Input",
+  component: Input,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
   parameters: {
@@ -10,13 +9,21 @@ export default {
     layout: "fullscreen",
   },
 };
-
-export const LoggedIn = {
+export const Text = {
   args: {
-    user: {
-      name: "Jane Doe",
-    },
+    type: "text",
+    label: "Name",
   },
 };
-
-export const LoggedOut = {};
+export const Email = {
+  args: {
+    type: "email",
+    label: "Email",
+  },
+};
+export const Password = {
+  args: {
+    type: "password",
+    label: "Password",
+  },
+};

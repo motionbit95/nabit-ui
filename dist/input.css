@@ -1,0 +1,106 @@
+.input-container {
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-wrapper .inner {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.input-wrapper .inner .icon {
+  position: absolute;
+  margin-right: 16px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.input-label--small {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+.input-label--medium {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  font-size: medium;
+}
+
+.input-label--large {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  font-size: large;
+}
+
+.input-label--required {
+  color: var(--error-color);
+  margin-left: 5px;
+}
+
+.input-error-message {
+  color: var(--error-color);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.input {
+  font-family: var(--font-family);
+  border: 1px solid #d9d9d9;
+  border-radius: 3em;
+  padding: 8px 16px;
+  font-size: 14px;
+  outline-color: var(--secondary-color);
+  width: 100%;
+}
+
+.input--error {
+  font-family: var(--font-family);
+  border: 2px solid var(--error-color);
+  border-radius: 3em;
+  padding: 8px 16px;
+  font-size: 14px;
+  outline-color: var(--secondary-color);
+  width: 100%;
+}
+
+.input--small {
+  font-size: 12px;
+  padding: 4px 16px;
+}
+.input--medium {
+  font-size: 14px;
+  padding: 8px 20px;
+}
+.input--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}

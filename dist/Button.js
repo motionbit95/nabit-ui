@@ -1,8 +1,8 @@
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-import React from 'react';
-import PropTypes from 'prop-types';
-import './button.css';
-import './styleguide.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./button.css";
+import "./styleguide.css";
 
 /**
  * Primary UI component for user interaction
@@ -14,10 +14,10 @@ export const Button = ({
   label,
   ...props
 }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
   return /*#__PURE__*/React.createElement("button", _extends({
     type: "button",
-    className: ['storybook-button', `storybook-button--${size}`, mode].join(' '),
+    className: ["storybook-button", `storybook-button--${size}`, mode].join(" "),
     style: backgroundColor && {
       backgroundColor
     }
@@ -35,7 +35,7 @@ Button.propTypes = {
   /**
    * How large should the button be?
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(["small", "medium", "large"]),
   /**
    * Button contents
    */
@@ -48,6 +48,6 @@ Button.propTypes = {
 Button.defaultProps = {
   backgroundColor: null,
   primary: false,
-  size: 'medium',
+  size: "medium",
   onClick: undefined
 };

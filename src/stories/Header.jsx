@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import { Button } from "./Button";
 import "./header.css";
+import { Avartar } from "./Avartar";
 
 export const Header = ({
   user,
@@ -11,8 +12,8 @@ export const Header = ({
   onCreateAccount,
   colorMode,
 }) => (
-  <header>
-    <div className={`storybook-header ${colorMode}`}>
+  <header className={`${colorMode}`}>
+    <div className={`storybook-header`}>
       <div>
         <svg
           width="89"
@@ -43,14 +44,24 @@ export const Header = ({
           />
         </svg>
       </div>
+      <div className="row">
+        <div className={`text-${colorMode}`}>AI</div>
+        <div className={`text-${colorMode}`}>Vectors</div>
+        <div className={`text-${colorMode}`}>Images</div>
+        <div className={`text-${colorMode}`}>3D Arts</div>
+        <div className={`text-${colorMode}`}>Icons</div>
+        <div className={`text-${colorMode}`}>UI/UX</div>
+      </div>
+      <div className="row">
+        <div className={`text-${colorMode}`}>Contact</div>
+        <div className={`text-${colorMode}`}>Pricing</div>
+      </div>
       <div>
         {user ? (
-          <>
-            <span className="welcome">
-              Welcome, <b>{user.name}</b>!
-            </span>
+          <div className="row">
+            <Avartar size={"small"} src={user.picture} />
             <Button size="small" onClick={onLogout} label="Log out" />
-          </>
+          </div>
         ) : (
           <>
             <Button size="small" onClick={onLogin} label="Log in" />
