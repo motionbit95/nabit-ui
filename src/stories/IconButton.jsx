@@ -20,7 +20,6 @@ export const IconButton = ({ size, icon, onClick, ...props }) => {
 };
 
 IconButton.propTypes = {
-  icon: PropTypes.string,
   size: PropTypes.oneOf(["small", "medium", "large"]),
   /**
    * Optional click handler
